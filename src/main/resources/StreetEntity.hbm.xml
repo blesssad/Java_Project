@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="is.technologies.Entities.StreetEntity" table="street" schema="public" catalog="forjavalab2">
+        <id name="streetId">
+            <column name="street_id" sql-type="bigint"/>
+        </id>
+        <property name="streetName">
+            <column name="street_name" sql-type="varchar"/>
+        </property>
+        <property name="postalCode">
+            <column name="postal_code" sql-type="integer"/>
+        </property>
+    </class>
+</hibernate-mapping>
